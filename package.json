@@ -4,9 +4,12 @@
     "eslint": "^7.16.0",
     "express": "^4.17.1",
     "mongoose": "^5.11.8",
-    "nodemon": "^2.0.6"
+    "nodemon": "^2.0.6",
+    "swagger-autogen": "^2.1.1",
+    "swagger-ui-express": "^4.1.6"
   },
   "scripts": {
-    "dev": "nodemon app.js"
+    "dev": "nodemon app.js",
+    "swagger-autogen": "node swagger.js"
   }
 }
