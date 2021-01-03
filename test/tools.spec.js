@@ -38,8 +38,7 @@ describe('Tools tests', () => {
       .end((error, response) => {
         chai.expect(error).to.be.null
         chai.expect(response).to.have.status(200)
-        chai.expect(response.body.length).to.be.equal(4);
-        chai.expect(response.body).to.containSubset([ToolSchema]);
+        chai.expect(response.body).to.containSubset([ToolSchema])
       })
   })
 })
