@@ -4,6 +4,8 @@ node_js:
 cache:
   directories:
     - "node_modules"
+env:
+  - SECRET=CXLntS#roUdF8jJoaEx#2N9rRH8gKF%C
 install:
   - npm install
 script:
