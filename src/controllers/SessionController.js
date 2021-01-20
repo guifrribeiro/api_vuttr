@@ -27,7 +27,7 @@ module.exports = {
         return response.status(400).json({ message: 'The user already exists.' })
       }
 
-      return response.json(user)
+      return response.status(201).json(user)
     } catch (error) {
       return response.json({ 'Several error ': error})
     }

@@ -19,6 +19,7 @@ describe('Tools tests', () => {
   it('Store tool', () => {
     chai.request(app.app)
       .post('/tools')
+      .set('x-access-token', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwMDdjZWI0NjBjOTI3ZDMxNjg3NWJiZCIsImlhdCI6MTYxMTEyNDQ0OSwiZXhwIjoxNjExMjEwODQ5fQ.Uo3-yBYMv5g_JuXob_x5d5-H4y4TXS8_rzJEVGThCJQ')
       .send({
         title: 'Guilherme GitHub Page',
         link: 'https://github.com/guifrribeiro',
@@ -35,6 +36,7 @@ describe('Tools tests', () => {
   it('Get tools', () => {
     chai.request(app.app)
       .get('/tools')
+      .set('x-access-token', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwMDdjZWI0NjBjOTI3ZDMxNjg3NWJiZCIsImlhdCI6MTYxMTEyNDQ0OSwiZXhwIjoxNjExMjEwODQ5fQ.Uo3-yBYMv5g_JuXob_x5d5-H4y4TXS8_rzJEVGThCJQ')
       .end((error, response) => {
         chai.expect(error).to.be.null
         chai.expect(response).to.have.status(200)
