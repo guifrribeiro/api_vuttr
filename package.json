@@ -16,7 +16,7 @@
   },
   "scripts": {
     "dev": "nodemon app.js",
-    "test": "mocha test --exit",
+    "test": "mocha --timeout 10000 test --exit",
     "swagger-autogen": "node swagger.js"
   }
 }
